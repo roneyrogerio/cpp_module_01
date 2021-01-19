@@ -6,15 +6,15 @@
 /*   By: rde-oliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/11 16:00:54 by rde-oliv          #+#    #+#             */
-/*   Updated: 2021/01/18 17:00:31 by rde-oliv         ###   ########.fr       */
+/*   Updated: 2021/01/18 22:10:23 by rde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #pragma once
 # include <iostream>
-# include "Zombie.hpp"
 # include <cstdlib>
 # include <ctime>
+# include "Zombie.hpp"
 
 class ZombieEvent
 {
@@ -25,4 +25,6 @@ class ZombieEvent
 		void	setZombieType(std::string type);
 		Zombie*	newZombie(std::string name);
 		void	randomChump(void);
+	private:
+		void	random(Zombie &zombie);
 };
