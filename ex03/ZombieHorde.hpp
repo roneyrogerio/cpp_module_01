@@ -6,7 +6,7 @@
 /*   By: rde-oliv <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 17:33:53 by rde-oliv          #+#    #+#             */
-/*   Updated: 2021/01/20 22:37:16 by rde-oliv         ###   ########.fr       */
+/*   Updated: 2021/01/20 22:44:15 by rde-oliv         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class	ZombieHorde
 		ZombieHorde(int n);
 		~ZombieHorde(void);
 		void	announce(void);
-		void	announce(Zombie &zombie);
 	private:
+		void	announce(Zombie &zombie);
 		void	random(Zombie &zombie);
 };
